@@ -22,23 +22,23 @@
 
 
             switch ($operator) {
-                case 1:
+                case "+":
                     $result = add($value1,$value2);
                     break;
                 
-                case 2:
+                case "-":
                     $result = sub($value1,$value2);
                     break;
                 
-                case 3:
+                case "*":
                     $result = multiply($value1,$value2);
                     break;
                  
-                case 4:
+                case "/":
                     $result = divide($value1,$value2);
                     break;
                     
-                case 5:  
+                case "%":  
                     $result = percent($value2,$value1);
                     break;
                 
@@ -68,11 +68,11 @@
     
                     <div class="col-md-auto p-1">
                         <select class="form-select" name="operator" id="operator">
-                            <option value="1" <?php if($operator == 1){ echo "selected";} ?>>+</option>
-                            <option value="2" <?php if($operator == 2){ echo "selected";} ?>>-</option>
-                            <option value="3" <?php if($operator == 3){ echo "selected";} ?>>&times;</option>
-                            <option value="4" <?php if($operator == 4){ echo "selected";} ?>>/</option>
-                            <option value="5" <?php if($operator == 5){ echo "selected";} ?>>% of</option>
+                            <option value="+" <?php if($operator == "+"){ echo "selected";} ?>>+</option>
+                            <option value="-" <?php if($operator == "-"){ echo "selected";} ?>>-</option>
+                            <option value="*" <?php if($operator == "*"){ echo "selected";} ?>>&times;</option>
+                            <option value="/" <?php if($operator == "/"){ echo "selected";} ?>>/</option>
+                            <option value="%" <?php if($operator == "%"){ echo "selected";} ?>>% of</option>
                         </select>
                     </div>
         

@@ -17,8 +17,6 @@
 
 
         <form action="calculate.php" method="GET" >
-            
-            
             <div class="row row-cols-lg-auto align-items-center justify-content-center">
                 
                     <div class="col-md-auto p-1">
@@ -27,11 +25,11 @@
     
                     <div class="col-md-auto p-1">
                         <select class="form-select" name="operator" id="operator">
-                            <option value="1">+</option>
-                            <option value="2">-</option>
-                            <option value="3">&times;</option>
-                            <option value="4">/</option>
-                            <option value="5">% of</option>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">&times;</option>
+                            <option value="/">/</option>
+                            <option value="%">% of</option>
                         </select>
                     </div>
         
@@ -44,13 +42,22 @@
                         <button class="btn btn-warning" type="submit">Calculate</button>
                     </div>
                 </div>
+        </form>
 
+
+        <!-- Version 2 -->
+        <form action="calcv2.php" method="GET" >
+            <h2>Calculator Version 2</h2>
+            <div class="col-auto">
+                <input type="text" class="form-control" id="userinput" name="userinput" placeholder="eg    5+6,    3-2,   9*7,   12/6" required>
+            </div>
+            <div class="col-auto p-4">
+                <button class="btn btn-warning" type="submit">Calculate</button>
+            </div>
         </form>
         
 
         <div class='text-center'><h3></h3></div>
-
-
        
     </div>
 </body>
