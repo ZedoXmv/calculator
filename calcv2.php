@@ -57,7 +57,7 @@
         </form>
         
 
-        <div class='text-center'><h3>Result: <?php echo $result;?></h3>
+        <div class='text-center'><h3>Result: <?php echo round($result,3); ?></h3>
         </div>
        
     </div>

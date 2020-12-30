@@ -88,7 +88,7 @@
 
         </form>
         <div class="text-center">
-        <h3>Result: <?php  echo round($result,2); ?></h3>
+        <h3>Result: <?php  echo round($result,3); ?></h3>
         </div>
     </div>
 </body>
